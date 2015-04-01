@@ -3,7 +3,7 @@
 Plugin Name: Cocorico Portfolio
 Plugin URI: https://www.themesdefrance.fr/plugins/cocorico-portfolio
 Description: Cocorico Portfolio met en valeur vos projets sur votre site
-Version: 0.0.1
+Version: 0.0.2
 Author: Themes de France
 Author URI: https://www.themesdefrance.fr
 Text Domain: cocoportfolio
@@ -26,6 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+define('COCO_PORTFOLIO_URI', plugin_dir_url(__FILE__).'admin/Cocorico/');
+define('COCO_PORTFOLIO_COCORICO_PREFIX', 'cocoportfolio_');
+define('COCO_PORTFOLIO_VERSION', '0.0.2');
+
 /**
  * Load translations
  *
@@ -44,6 +48,20 @@ if (!function_exists('coco_portfolio_load_textdomain')){
 }
 add_action( 'init', 'coco_portfolio_load_textdomain' );
 
+// Cocorico loading
+if(is_admin())
+	require_once 'admin/Cocorico/Cocorico.php';
+
+// Plugin Admin
+function coco_portfolio_menu_item(){
+	add_submenu_page('edit.php?post_type=portfolio',__('Cocorico Portfolio Settings','cocoportfolio'), __('Settings','cocoportfolio'), 'manage_options', 'coco-portfolio', 'coco_portfolio_options');
+}
+add_action('admin_menu','coco_portfolio_menu_item');
+
+function coco_portfolio_options(){
+	include('admin/cocorico-portfolio-admin.php');
+}
+
 /**
  * Initialize the portfolio post type on plugin activation
  *
@@ -57,7 +75,7 @@ function cocorico_portfolio_activate() {
 register_activation_hook( __FILE__, 'cocorico_portfolio_activate' );
 
 /**
- * Sets up portfolio post type and registers portfolio category and portfolio tag taxonomies.
+ * Sets up portfolio post type and registers portfolio category //and portfolio tag taxonomies (categories are enough to begin with).
  *
  * @since 1.0
  * @return void
@@ -88,7 +106,7 @@ if (!function_exists('coco_portfolio_init')){
 			'label'			=>__('Project', 'cocoportfolio'),
 			'labels'		=>$portfolio_labels,
 			'public'		=>true,
-			'supports' 		=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', 'custom-fields'/*, 'post-formats'*/),
+			'supports' 		=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', /*'custom-fields', 'post-formats'*/),
 			'menu_position'	=>20,
 			'has_archive'	=>true,
 			'rewrite'		=>array(
@@ -176,3 +194,54 @@ if (!function_exists('coco_portfolio_init')){
 	}
 }
 add_action('init', 'coco_portfolio_init');
+
+/**
+ * Displays project metaboxes
+ *
+ * @since 1.0
+ * @return void
+ */
+if (!function_exists('coco_portfolio_metaboxes')){
+	
+	function coco_portfolio_metaboxes(){
+		require_once 'admin/cocorico-portfolio-metaboxes.php';
+	}
+}	
+add_action('after_setup_theme', 'coco_portfolio_metaboxes');
+
+/**
+ * Project update messages.
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_post_type#Example
+ *
+ * @param array $messages Existing post update messages.
+ *
+ * @return array Amended post update messages with new CPT update messages.
+ */
+function coco_portfolio_project_updated_messages( $messages ) {
+	$post             = get_post();
+	$post_type        = get_post_type( $post );
+	$post_type_object = get_post_type_object( $post_type );
+	
+	$messages['portfolio'] = array(
+		0  => '', // Unused. Messages start at index 1.
+		1  => __( 'Project updated.', 'cocoportfolio' ),
+		2  => __( 'Custom field updated.', 'cocoportfolio' ),
+		3  => __( 'Custom field deleted.', 'cocoportfolio' ),
+		4  => __( 'Project updated.', 'cocoportfolio' ),
+		/* translators: %s: date and time of the revision */
+		5  => isset( $_GET['revision'] ) ? sprintf( __( 'Project restored to revision from %s', 'cocoportfolio' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+		6  => __( 'Project published.', 'cocoportfolio' ),
+		7  => __( 'Project saved.', 'cocoportfolio' ),
+		8  => __( 'Project submitted.', 'cocoportfolio' ),
+		9  => sprintf(
+			__( 'Project scheduled for: <strong>%1$s</strong>.', 'cocoportfolio' ),
+			// translators: Publish box date format, see http://php.net/date
+			date_i18n( __( 'M j, Y @ G:i', 'cocoportfolio' ), strtotime( $post->post_date ) )
+		),
+		10 => __( 'Project draft updated.', 'cocoportfolio' )
+	);
+
+	return $messages;
+}
+add_filter( 'post_updated_messages', 'coco_portfolio_project_updated_messages' );

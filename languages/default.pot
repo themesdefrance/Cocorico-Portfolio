@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cocorico Portfolio\n"
-"POT-Creation-Date: 2015-04-01 11:39+0100\n"
-"PO-Revision-Date: 2015-04-01 11:39+0100\n"
+"POT-Creation-Date: 2015-04-01 18:37+0100\n"
+"PO-Revision-Date: 2015-04-01 18:37+0100\n"
 "Last-Translator: \n"
 "Language-Team:  <alex@themesdefrance.fr>\n"
 "Language: English\n"
@@ -17,175 +17,285 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../cocorico-portfolio.php:71 ../cocorico-portfolio.php:73
+#: ../cocorico-portfolio.php:57 ../admin/cocorico-portfolio-admin.php:10
+msgid "Cocorico Portfolio Settings"
+msgstr ""
+
+#: ../cocorico-portfolio.php:57
+msgid "Settings"
+msgstr ""
+
+#: ../cocorico-portfolio.php:89 ../cocorico-portfolio.php:91
 msgid "Portfolio"
 msgstr ""
 
-#: ../cocorico-portfolio.php:72 ../cocorico-portfolio.php:74
-#: ../cocorico-portfolio.php:88
+#: ../cocorico-portfolio.php:90 ../cocorico-portfolio.php:92
+#: ../cocorico-portfolio.php:106
 msgid "Project"
 msgstr ""
 
-#: ../cocorico-portfolio.php:75 ../cocorico-portfolio.php:77
+#: ../cocorico-portfolio.php:93 ../cocorico-portfolio.php:95
 msgid "Add New"
 msgstr ""
 
-#: ../cocorico-portfolio.php:76
+#: ../cocorico-portfolio.php:94
 msgid "Add New Project"
 msgstr ""
 
-#: ../cocorico-portfolio.php:78
+#: ../cocorico-portfolio.php:96
 msgid "Edit Project"
 msgstr ""
 
-#: ../cocorico-portfolio.php:79
+#: ../cocorico-portfolio.php:97
 msgid "View Project"
 msgstr ""
 
-#: ../cocorico-portfolio.php:80
+#: ../cocorico-portfolio.php:98
 msgid "All Projects"
 msgstr ""
 
-#: ../cocorico-portfolio.php:81
+#: ../cocorico-portfolio.php:99
 msgid "Search Projects"
 msgstr ""
 
-#: ../cocorico-portfolio.php:82
+#: ../cocorico-portfolio.php:100
 msgid "Parent Project:"
 msgstr ""
 
-#: ../cocorico-portfolio.php:83
+#: ../cocorico-portfolio.php:101
 msgid "No Projects found."
 msgstr ""
 
-#: ../cocorico-portfolio.php:84
+#: ../cocorico-portfolio.php:102
 msgid "No Projects found in Trash."
 msgstr ""
 
-#: ../cocorico-portfolio.php:95
+#: ../cocorico-portfolio.php:113
 msgid "project"
 msgstr ""
 
-#: ../cocorico-portfolio.php:107
+#: ../cocorico-portfolio.php:125
 msgid "Projects Categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:108
+#: ../cocorico-portfolio.php:126
 msgid "Project Category"
 msgstr ""
 
-#: ../cocorico-portfolio.php:109
-msgid "Search Project Categories"
+#: ../cocorico-portfolio.php:127
+msgid "Search Projects Categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:110
+#: ../cocorico-portfolio.php:128
 msgid "Popular Projects Categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:111
+#: ../cocorico-portfolio.php:129
 msgid "All Projects Categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:112
+#: ../cocorico-portfolio.php:130
 msgid "Parent Project Category"
 msgstr ""
 
-#: ../cocorico-portfolio.php:113
+#: ../cocorico-portfolio.php:131
 msgid "Parent Project Category:"
 msgstr ""
 
-#: ../cocorico-portfolio.php:114
+#: ../cocorico-portfolio.php:132
 msgid "Edit Project Category"
 msgstr ""
 
-#: ../cocorico-portfolio.php:115
+#: ../cocorico-portfolio.php:133
 msgid "Update Project Category"
 msgstr ""
 
-#: ../cocorico-portfolio.php:116
+#: ../cocorico-portfolio.php:134
 msgid "Add New Project Category"
 msgstr ""
 
-#: ../cocorico-portfolio.php:117
+#: ../cocorico-portfolio.php:135
 msgid "New Project Category Name"
 msgstr ""
 
-#: ../cocorico-portfolio.php:118
+#: ../cocorico-portfolio.php:136
 msgid "Add or remove projects categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:119
+#: ../cocorico-portfolio.php:137
 msgid "Choose from the most used projects categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:120 ../cocorico-portfolio.php:124
+#: ../cocorico-portfolio.php:138 ../cocorico-portfolio.php:142
 msgid "Categories"
 msgstr ""
 
-#: ../cocorico-portfolio.php:131
+#: ../cocorico-portfolio.php:149
 msgid "project_cat"
 msgstr ""
 
-#: ../cocorico-portfolio.php:142
+#: ../cocorico-portfolio.php:160
 msgid "Projects Tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:143
+#: ../cocorico-portfolio.php:161
 msgid "Project Tag"
 msgstr ""
 
-#: ../cocorico-portfolio.php:144
-msgid "Search Project Tags"
+#: ../cocorico-portfolio.php:162
+msgid "Search Projects Tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:145
+#: ../cocorico-portfolio.php:163
 msgid "Popular Projects Tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:146
+#: ../cocorico-portfolio.php:164
 msgid "All Projects Tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:147
+#: ../cocorico-portfolio.php:165
 msgid "Parent Project Tag"
 msgstr ""
 
-#: ../cocorico-portfolio.php:148
+#: ../cocorico-portfolio.php:166
 msgid "Parent Project Tag:"
 msgstr ""
 
-#: ../cocorico-portfolio.php:149
+#: ../cocorico-portfolio.php:167
 msgid "Edit Project Tag"
 msgstr ""
 
-#: ../cocorico-portfolio.php:150
+#: ../cocorico-portfolio.php:168
 msgid "Update Project Tag"
 msgstr ""
 
-#: ../cocorico-portfolio.php:151
+#: ../cocorico-portfolio.php:169
 msgid "Add New Project Tag"
 msgstr ""
 
-#: ../cocorico-portfolio.php:152
+#: ../cocorico-portfolio.php:170
 msgid "New Project Tag Name"
 msgstr ""
 
-#: ../cocorico-portfolio.php:153
+#: ../cocorico-portfolio.php:171
 msgid "Separate projects tags with commas"
 msgstr ""
 
-#: ../cocorico-portfolio.php:154
+#: ../cocorico-portfolio.php:172
 msgid "Add or remove projects tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:155
+#: ../cocorico-portfolio.php:173
 msgid "Choose from the most used projects tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:156 ../cocorico-portfolio.php:160
+#: ../cocorico-portfolio.php:174 ../cocorico-portfolio.php:178
 msgid "Tags"
 msgstr ""
 
-#: ../cocorico-portfolio.php:168
+#: ../cocorico-portfolio.php:186
 msgid "project_tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:228 ../cocorico-portfolio.php:231
+msgid "Project updated."
+msgstr ""
+
+#: ../cocorico-portfolio.php:229
+msgid "Custom field updated."
+msgstr ""
+
+#: ../cocorico-portfolio.php:230
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../cocorico-portfolio.php:233
+#, php-format
+msgid "Project restored to revision from %s"
+msgstr ""
+
+#: ../cocorico-portfolio.php:234
+msgid "Project published."
+msgstr ""
+
+#: ../cocorico-portfolio.php:235
+msgid "Project saved."
+msgstr ""
+
+#: ../cocorico-portfolio.php:236
+msgid "Project submitted."
+msgstr ""
+
+#: ../cocorico-portfolio.php:238
+#, php-format
+msgid "Project scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: ../cocorico-portfolio.php:240
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../cocorico-portfolio.php:242
+msgid "Project draft updated."
+msgstr ""
+
+#: ../cocorico-portfolio.php:248
+msgid "View project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:254
+msgid "Preview project"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-admin.php:13
+msgid "General"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-admin.php:26
+msgid "Save Changes"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-admin.php:34
+msgid "Cocorico Portfolio is brought to you by"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-admin.php:34
+msgid "If you found this plugin useful"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-admin.php:34
+msgid "give it 5 &#9733; on WordPress.org"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-metaboxes.php:7
+msgid "Project details"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-metaboxes.php:26
+msgid "Client"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-metaboxes.php:27
+msgid "Enter the client name"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-metaboxes.php:31
+msgid "URL"
+msgstr ""
+
+#: ../admin/cocorico-portfolio-metaboxes.php:32
+msgid "Enter the project URL"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:181
+msgid "Save all changes"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:275
+msgid "Select"
+msgstr ""
+
+#: ../admin/Cocorico/plugins/CocoricoComponents.php:322
+msgid "Delete"
 msgstr ""
