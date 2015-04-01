@@ -1,0 +1,28 @@
+{
+  "name": "Cocorico-Portfolio",
+  "version": "0.0.0",
+  "description": "Add a portfolio custom post type to any WordPress theme",
+  "main": "cocorico-portfolio.php",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themesdefrance/Cocorico-Portfolio.git"
+  },
+  "author": "Thèmes de France",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/themesdefrance/Cocorico-Portfolio/issues"
+  },
+  "homepage": "https://github.com/themesdefrance/Cocorico-Portfolio",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.18.1"
+  }
+}

@@ -1,0 +1,249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cocorico Portfolio\n"
+"POT-Creation-Date: 2015-04-01 11:41+0100\n"
+"PO-Revision-Date: 2015-04-01 11:44+0100\n"
+"Last-Translator: \n"
+"Language-Team:  <alex@themesdefrance.fr>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex;_nx;esc_attr_e;esc_attr__;"
+"esc_attr_x;esc_html__;esc_html_e;esc_html_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../cocorico-portfolio.php:71
+msgctxt "project post type general name"
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: ../cocorico-portfolio.php:72
+msgctxt "project post type singular name"
+msgid "Project"
+msgstr "Projet"
+
+#: ../cocorico-portfolio.php:73
+msgctxt "projects admin menu"
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: ../cocorico-portfolio.php:74
+msgctxt "add new project on admin bar"
+msgid "Project"
+msgstr "Projet"
+
+#: ../cocorico-portfolio.php:75
+msgctxt "add new portfolio"
+msgid "Add New"
+msgstr "Ajouter"
+
+#: ../cocorico-portfolio.php:76
+msgid "Add New Project"
+msgstr "Ajouter un Projet"
+
+#: ../cocorico-portfolio.php:77
+msgid "Add New"
+msgstr "Ajouter"
+
+#: ../cocorico-portfolio.php:78
+msgid "Edit Project"
+msgstr "Modifier le projet"
+
+#: ../cocorico-portfolio.php:79
+msgid "View Project"
+msgstr "Voir le projet"
+
+#: ../cocorico-portfolio.php:80
+msgid "All Projects"
+msgstr "Tous les projets"
+
+#: ../cocorico-portfolio.php:81
+msgid "Search Projects"
+msgstr "Chercher dans les projets"
+
+#: ../cocorico-portfolio.php:82
+msgid "Parent Project:"
+msgstr "Projet parent:"
+
+#: ../cocorico-portfolio.php:83
+msgid "No Projects found."
+msgstr "Aucun projet trouvé."
+
+#: ../cocorico-portfolio.php:84
+msgid "No Projects found in Trash."
+msgstr "Aucun projet trouvé dans la corbeille."
+
+#: ../cocorico-portfolio.php:88
+msgid "Project"
+msgstr "Projet"
+
+#: ../cocorico-portfolio.php:95
+msgctxt "project slug"
+msgid "project"
+msgstr "projet"
+
+#: ../cocorico-portfolio.php:107
+msgid "Projects Categories"
+msgstr "Catégories de projets"
+
+#: ../cocorico-portfolio.php:108
+msgid "Project Category"
+msgstr "Catégorie de projet"
+
+#: ../cocorico-portfolio.php:109
+msgid "Search Projects Categories"
+msgstr "Rechercher dans les catégories de projets"
+
+#: ../cocorico-portfolio.php:110
+msgid "Popular Projects Categories"
+msgstr "Catégories de projets populaires"
+
+#: ../cocorico-portfolio.php:111
+msgid "All Projects Categories"
+msgstr "Toutes les catégories de projets"
+
+#: ../cocorico-portfolio.php:112
+msgid "Parent Project Category"
+msgstr "Catégorie de projet parente"
+
+#: ../cocorico-portfolio.php:113
+msgid "Parent Project Category:"
+msgstr "Catégorie de projet parente:"
+
+#: ../cocorico-portfolio.php:114
+msgid "Edit Project Category"
+msgstr "Modifier la catégorie de projet"
+
+#: ../cocorico-portfolio.php:115
+msgid "Update Project Category"
+msgstr "Mettre à jour la catégorie de projet"
+
+#: ../cocorico-portfolio.php:116
+msgid "Add New Project Category"
+msgstr "Ajouter une nouvelle catégorie de projet"
+
+#: ../cocorico-portfolio.php:117
+msgid "New Project Category Name"
+msgstr "Nouveau nom de catégorie de projet"
+
+#: ../cocorico-portfolio.php:118
+msgid "Add or remove projects categories"
+msgstr "Ajouter ou supprimer des catégories de projet"
+
+#: ../cocorico-portfolio.php:119
+msgid "Choose from the most used projects categories"
+msgstr "Choisir parmi les catégories de projets les plus utilisées"
+
+#: ../cocorico-portfolio.php:120 ../cocorico-portfolio.php:124
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../cocorico-portfolio.php:131
+msgctxt "project category taxonomy slug"
+msgid "project_cat"
+msgstr "projet_cat"
+
+#: ../cocorico-portfolio.php:142
+msgid "Projects Tags"
+msgstr "Mots-clés de Projets"
+
+#: ../cocorico-portfolio.php:143
+msgid "Project Tag"
+msgstr "Mot-clé de projet"
+
+#: ../cocorico-portfolio.php:144
+msgid "Search Projects Tags"
+msgstr "Chercher dans les mots-clés de projets"
+
+#: ../cocorico-portfolio.php:145
+msgid "Popular Projects Tags"
+msgstr "Mots-clés de projets populaires"
+
+#: ../cocorico-portfolio.php:146
+msgid "All Projects Tags"
+msgstr "Tous les mots-clés de projets "
+
+#: ../cocorico-portfolio.php:147
+msgid "Parent Project Tag"
+msgstr "Mot-clé de projet parent"
+
+#: ../cocorico-portfolio.php:148
+msgid "Parent Project Tag:"
+msgstr "Mot-clé de projet parent:"
+
+#: ../cocorico-portfolio.php:149
+msgid "Edit Project Tag"
+msgstr "Modifier le mot-clé de projet"
+
+#: ../cocorico-portfolio.php:150
+msgid "Update Project Tag"
+msgstr "Mettre à jour le mot-clé de projet"
+
+#: ../cocorico-portfolio.php:151
+msgid "Add New Project Tag"
+msgstr "Ajouter un mot-clé de projet"
+
+#: ../cocorico-portfolio.php:152
+msgid "New Project Tag Name"
+msgstr "Nouveau nom de mot-clé de projet"
+
+#: ../cocorico-portfolio.php:153
+msgid "Separate projects tags with commas"
+msgstr "Séparer les mots-clés de projets par des virgules"
+
+#: ../cocorico-portfolio.php:154
+msgid "Add or remove projects tags"
+msgstr "Ajouter ou supprimer des mots-clés de projets"
+
+#: ../cocorico-portfolio.php:155
+msgid "Choose from the most used projects tags"
+msgstr "Choisir parmi les mots-clés de projets les plus utilisés"
+
+#: ../cocorico-portfolio.php:156 ../cocorico-portfolio.php:160
+msgid "Tags"
+msgstr "Mots-clés"
+
+#: ../cocorico-portfolio.php:168
+msgctxt "project tag taxonomy slug"
+msgid "project_tag"
+msgstr "projet_motcle"
+
+#~ msgid "Separate portfolio categories with commas"
+#~ msgstr "Séparer les catégories de portfolio par des virgules"
+
+#~ msgctxt "portfolio category taxonomy slug"
+#~ msgid "portfolio_cat"
+#~ msgstr "portfolio_cat"
+
+#~ msgid "Portfolio Tags"
+#~ msgstr "Mots-clés de portfolio"
+
+#~ msgid "Portfolio Tag"
+#~ msgstr "Mot-clé de portfolio"
+
+#~ msgid "Search Portfolio Tags"
+#~ msgstr "Rechercher dans les mots-clés de portfolio"
+
+#~ msgid "All Portfolio Tags"
+#~ msgstr "Tous les mots-clés de portfolio"
+
+#~ msgid "Parent Portfolio Tag"
+#~ msgstr "Mot-clé de portfolio parent"
+
+#~ msgid "Parent Portfolio Tag:"
+#~ msgstr "Mot-clé de portfolio parent:"
+
+#~ msgid "Edit Portfolio Tag"
+#~ msgstr "Modifier le mot-clé de portfolio"
+
+#~ msgid "Add New Portfolio Tag"
+#~ msgstr "Ajouter un nouveau mot-clé de portfolio"
+
+#~ msgctxt "portfolio tag taxonomy slug"
+#~ msgid "portfolio_tag"
+#~ msgstr "portfolio_motcle"

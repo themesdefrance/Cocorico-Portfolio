@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cocorico Portfolio\n"
+"POT-Creation-Date: 2015-04-01 11:39+0100\n"
+"PO-Revision-Date: 2015-04-01 11:39+0100\n"
+"Last-Translator: \n"
+"Language-Team:  <alex@themesdefrance.fr>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx;esc_attr_e;esc_attr__;"
+"esc_attr_x;esc_html__;esc_html_e;esc_html_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../cocorico-portfolio.php:71 ../cocorico-portfolio.php:73
+msgid "Portfolio"
+msgstr ""
+
+#: ../cocorico-portfolio.php:72 ../cocorico-portfolio.php:74
+#: ../cocorico-portfolio.php:88
+msgid "Project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:75 ../cocorico-portfolio.php:77
+msgid "Add New"
+msgstr ""
+
+#: ../cocorico-portfolio.php:76
+msgid "Add New Project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:78
+msgid "Edit Project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:79
+msgid "View Project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:80
+msgid "All Projects"
+msgstr ""
+
+#: ../cocorico-portfolio.php:81
+msgid "Search Projects"
+msgstr ""
+
+#: ../cocorico-portfolio.php:82
+msgid "Parent Project:"
+msgstr ""
+
+#: ../cocorico-portfolio.php:83
+msgid "No Projects found."
+msgstr ""
+
+#: ../cocorico-portfolio.php:84
+msgid "No Projects found in Trash."
+msgstr ""
+
+#: ../cocorico-portfolio.php:95
+msgid "project"
+msgstr ""
+
+#: ../cocorico-portfolio.php:107
+msgid "Projects Categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:108
+msgid "Project Category"
+msgstr ""
+
+#: ../cocorico-portfolio.php:109
+msgid "Search Project Categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:110
+msgid "Popular Projects Categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:111
+msgid "All Projects Categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:112
+msgid "Parent Project Category"
+msgstr ""
+
+#: ../cocorico-portfolio.php:113
+msgid "Parent Project Category:"
+msgstr ""
+
+#: ../cocorico-portfolio.php:114
+msgid "Edit Project Category"
+msgstr ""
+
+#: ../cocorico-portfolio.php:115
+msgid "Update Project Category"
+msgstr ""
+
+#: ../cocorico-portfolio.php:116
+msgid "Add New Project Category"
+msgstr ""
+
+#: ../cocorico-portfolio.php:117
+msgid "New Project Category Name"
+msgstr ""
+
+#: ../cocorico-portfolio.php:118
+msgid "Add or remove projects categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:119
+msgid "Choose from the most used projects categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:120 ../cocorico-portfolio.php:124
+msgid "Categories"
+msgstr ""
+
+#: ../cocorico-portfolio.php:131
+msgid "project_cat"
+msgstr ""
+
+#: ../cocorico-portfolio.php:142
+msgid "Projects Tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:143
+msgid "Project Tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:144
+msgid "Search Project Tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:145
+msgid "Popular Projects Tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:146
+msgid "All Projects Tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:147
+msgid "Parent Project Tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:148
+msgid "Parent Project Tag:"
+msgstr ""
+
+#: ../cocorico-portfolio.php:149
+msgid "Edit Project Tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:150
+msgid "Update Project Tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:151
+msgid "Add New Project Tag"
+msgstr ""
+
+#: ../cocorico-portfolio.php:152
+msgid "New Project Tag Name"
+msgstr ""
+
+#: ../cocorico-portfolio.php:153
+msgid "Separate projects tags with commas"
+msgstr ""
+
+#: ../cocorico-portfolio.php:154
+msgid "Add or remove projects tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:155
+msgid "Choose from the most used projects tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:156 ../cocorico-portfolio.php:160
+msgid "Tags"
+msgstr ""
+
+#: ../cocorico-portfolio.php:168
+msgid "project_tag"
+msgstr ""
