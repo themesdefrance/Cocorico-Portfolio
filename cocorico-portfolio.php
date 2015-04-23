@@ -146,14 +146,14 @@ if (!function_exists('coco_portfolio_init')){
 			'show_ui' 			=> true,
 			'show_admin_column' => true,
 			'show_tagcloud'		=> false,
-			'rewrite'=>array('slug'=>_x('project_cat','project category taxonomy slug', 'cocoportfolio'))
+			'rewrite'=>array('slug'=>_x('portfolio_cat','project category taxonomy slug', 'cocoportfolio'))
 		);
 		
 		$portfolio_tax_cat_args = apply_filters('coco_portfolio_tax_cat_args', $portfolio_tax_cat_args);
 		
-		register_taxonomy('project_cat', 'portfolio', $portfolio_tax_cat_args);
+		register_taxonomy('portfolio_cat', 'portfolio', $portfolio_tax_cat_args);
 		
-		register_taxonomy_for_object_type('project_cat', 'portfolio');
+		register_taxonomy_for_object_type('portfolio_cat', 'portfolio');
 		
 		// Portfolio tag taxonomy
 		$tax_portfolio_tag_labels = array(
@@ -183,14 +183,14 @@ if (!function_exists('coco_portfolio_init')){
 			'show_ui' => true,
 			'show_admin_column' => false,
 			'show_tagcloud' => false,
-			'rewrite' => array( 'slug' => _x('project_tag','project tag taxonomy slug', 'cocoportfolio') ),
+			'rewrite' => array( 'slug' => _x('portfolio_tag','project tag taxonomy slug', 'cocoportfolio') ),
 		);
 		
 		$portfolio_tax_tag_args = apply_filters('coco_portfolio_tax_tag_args', $portfolio_tax_tag_args);
 		
-		//register_taxonomy( 'project_tag', array( 'portfolio' ), $portfolio_tax_tag_args );
+		//register_taxonomy( 'portfolio_tag', array( 'portfolio' ), $portfolio_tax_tag_args );
 		
-		//register_taxonomy_for_object_type('project_tag', 'portfolio');
+		//register_taxonomy_for_object_type('portfolio_tag', 'portfolio');
 	}
 }
 add_action('init', 'coco_portfolio_init');
@@ -218,7 +218,7 @@ add_action('after_setup_theme', 'coco_portfolio_metaboxes');
  *
  * @return array Amended post update messages with new CPT update messages.
  */
-function coco_portfolio_project_updated_messages( $messages ) {
+function coco_portfolio_portfolio_updated_messages( $messages ) {
 	$post             = get_post();
 	$post_type        = get_post_type( $post );
 	$post_type_object = get_post_type_object( $post_type );
@@ -244,4 +244,4 @@ function coco_portfolio_project_updated_messages( $messages ) {
 
 	return $messages;
 }
-add_filter( 'post_updated_messages', 'coco_portfolio_project_updated_messages' );
+add_filter( 'post_updated_messages', 'coco_portfolio_portfolio_updated_messages' );

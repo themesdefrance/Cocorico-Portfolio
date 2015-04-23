@@ -3,13 +3,13 @@
 if(!function_exists('coco_portfolio_add_project_metaboxes')){
 	function coco_portfolio_add_project_metaboxes(){
 		add_meta_box(
-					'project_meta',
-					__('Project details', 'galopin'),
-					'coco_portfolio_project_callback',
-					 'portfolio',
-					 'normal',
-					 'high'
-					 );
+			'project_meta',
+			__('Project details', 'cocoportfolio'),
+			'coco_portfolio_project_callback',
+			 'portfolio',
+			 'normal',
+			 'high'
+		 );
 
 	}
 }
