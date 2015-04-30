@@ -103,16 +103,17 @@ if (!function_exists('coco_portfolio_init')){
 		);
 		
 		$portfolio_args = array(
-			'label'			=>__('Project', 'cocoportfolio'),
-			'labels'		=>$portfolio_labels,
-			'public'		=>true,
-			'supports' 		=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', /*'custom-fields', 'post-formats'*/),
-			'menu_position'	=>20,
-			'has_archive'	=>true,
-			'rewrite'		=>array(
-				'slug'=> _x('project', 'project slug', 'cocoportfolio')
+			'label'			=> __('Project', 'cocoportfolio'),
+			'labels'		=> $portfolio_labels,
+			'public'		=> true,
+			'publicly_queryable' => true,
+			'supports' 		=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes' /*'comments', 'custom-fields', 'post-formats'*/),
+			'menu_position'	=> 20,
+			'has_archive'	=> apply_filters('coco_portfolio_archive_slug', 'portfolio'),
+			'rewrite'		=> array(
+				'slug' => apply_filters('coco_portfolio_project_slug', _x('project', 'project slug', 'cocoportfolio'))
 			),
-			'exclude_from_search'=> true,
+			'exclude_from_search' => false,
 			'menu_icon'		=> 'dashicons-art'
 		);
 		
@@ -146,14 +147,17 @@ if (!function_exists('coco_portfolio_init')){
 			'show_ui' 			=> true,
 			'show_admin_column' => true,
 			'show_tagcloud'		=> false,
-			'rewrite'=>array('slug'=>_x('portfolio_cat','project category taxonomy slug', 'cocoportfolio'))
+			'rewrite'=> array(
+				'slug' => apply_filters('coco_portfolio_category_slug', _x('project-category', 'project category taxonomy slug', 'cocoportfolio'))
+			),
+			'public' => true
 		);
 		
 		$portfolio_tax_cat_args = apply_filters('coco_portfolio_tax_cat_args', $portfolio_tax_cat_args);
 		
-		register_taxonomy('portfolio_cat', 'portfolio', $portfolio_tax_cat_args);
+		register_taxonomy('skill', 'portfolio', $portfolio_tax_cat_args);
 		
-		register_taxonomy_for_object_type('portfolio_cat', 'portfolio');
+		register_taxonomy_for_object_type('skill', 'portfolio');
 		
 		// Portfolio tag taxonomy
 		$tax_portfolio_tag_labels = array(
@@ -245,3 +249,53 @@ function coco_portfolio_portfolio_updated_messages( $messages ) {
 	return $messages;
 }
 add_filter( 'post_updated_messages', 'coco_portfolio_portfolio_updated_messages' );
+
+/**
+ * Add new columns to portfolio projects admin page
+ *
+ * @since 1.0
+ * @return void
+ */
+function coco_portfolio_columns($columns){
+	$columns = array_slice($columns, 0, 1, true) + array('project_thumbnail' => __('Thumbnail', 'cocoportfolio')) + array_slice($columns, 1, count($columns), true);
+	return $columns;
+}
+add_filter('manage_edit-portfolio_columns', 'coco_portfolio_columns');
+
+function coco_portfolio_custom_columns($column, $post_id) {
+	switch ($column) {
+		case 'project_thumbnail' :
+			if (has_post_thumbnail($post_id)) {
+				$edit_url = get_edit_post_link($post_id);
+				echo '<a href="' . $edit_url . '">';
+				echo get_the_post_thumbnail($post_id, 'thumbnail');
+				echo '</a>';
+			} else {
+				echo '<small>' . __('None', 'cocoportfolio') . '</small>';
+			}
+
+			break;
+	}
+}
+add_action('manage_portfolio_posts_custom_column', 'coco_portfolio_custom_columns', 10, 2);
+
+/**
+ * Filter the rewrite slugs based on plugin settings
+ *
+ * @since 1.0
+ * @return void
+ */
+function coco_portfolio_archive_slug_from_setting($slug) {
+
+}
+add_filter('coco_portfolio_archive_slug', 'coco_portfolio_archive_slug_from_setting', 10, 1);
+
+function coco_portfolio_project_slug_from_setting($slug) {
+
+}
+add_filter('coco_portfolio_project_slug', 'coco_portfolio_project_slug_from_setting', 10, 1);
+
+function coco_portfolio_category_slug_from_setting($slug) {
+
+}
+add_filter('coco_portfolio_category_slug', 'coco_portfolio_category_slug_from_setting', 10, 1);

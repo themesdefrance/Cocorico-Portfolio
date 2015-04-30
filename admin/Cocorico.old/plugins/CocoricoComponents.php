@@ -83,6 +83,39 @@ function cocoricoTextareaComponent($component, $options=array()){
 }
 CocoDictionary::register(CocoDictionary::COMPONENT, 'textarea', 'cocoricoTextareaComponent');
 
+//editor
+function cocoricoEditorComponent($component, $options=array()){
+	$options = array_merge(array(
+		'class'=>array('widefat'),
+		'wpautop'=>true,
+		'media_buttons'=>false,
+	), $options);
+
+	$attrs = array(
+		'name'=>$component->getName(),
+		'id'=>$component->getName(),
+	);
+	foreach ($options as $attr=>$value){
+		switch ($attr){
+			case 'class':
+				$attrs['class'] = (is_array($value)) ? implode($value, ' ') : $value;
+				break;
+			default:
+				$attrs[$attr] = $value;
+				break;
+		}
+	}
+
+	$content = (!is_array($component->getValue())? $component->getValue() : '');
+
+	return wp_editor($content, $attrs['id'], array(
+		'wpautop' => $options['wpautop'],
+		'media_buttons' => $options['media_buttons'],
+		'drag_drop_upload' => $options['media_buttons'],
+	));
+}
+CocoDictionary::register(CocoDictionary::COMPONENT, 'editor', 'cocoricoEditorComponent');
+
 //single general input
 function cocoricoInputComponent($component, $options=array()){
 	$options = array_merge(array(
@@ -243,7 +276,7 @@ function cocoricoCheckboxComponent($component, $checkboxes, $options=array()){
 		<label>
 			<input type="checkbox" name="'.$component->getName().'[]" value="'.$value.'" '.((in_array($value, $selected)) ? 'checked="checked"' : '').' />
 			'.$label.'
-		</label>
+		</label><br>
 		';
 		$output .= $options['after'];
 	}

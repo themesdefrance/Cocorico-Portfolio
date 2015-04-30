@@ -16,7 +16,43 @@ $form->startWrapper('tab', 'general');
 
 $form->startForm();
 
-$form->component('raw', 'Options du plugin à définir voire à supprimer');
+$form->component('raw', 'Options du plugin');
+
+/*$form->setting(
+	array(
+		'type' => 'text',
+		'name' => 'archive_slug',
+		'label' => __('Archive slug', 'cocoportfolio'),
+		'description' => __('This settings lets you change the projects archive URL slug (default is "portfolio").', 'cocoportfolio') . __('<br><small>(please visit the Permalinks Settings page after changing this setting)</small>', 'cocoportfolio'),
+		'options' => array(
+			'default' => 'portfolio'
+		)
+	)
+);
+
+$form->setting(
+	array(
+		'type' => 'text',
+		'name' => 'project_slug',
+		'label' => __('Single project slug', 'cocoportfolio'),
+		'description' => __('This settings lets you change a single project URL slug (default is "project").', 'cocoportfolio') . __('<br><small>(please visit the Permalinks Settings page after changing this setting)</small>', 'cocoportfolio'),
+		'options' => array(
+			'default' => 'project'
+		)
+	)
+);
+
+$form->setting(
+	array(
+		'type' => 'text',
+		'name' => 'project_category_slug',
+		'label' => __('Project category slug', 'cocoportfolio'),
+		'description' => __('This settings lets you change the projects categories URL slug (default is "project-category").', 'cocoportfolio') . __('<br><small>(please visit the Permalinks Settings page after changing this setting)</small>', 'cocoportfolio'),
+		'options' => array(
+			'default' => 'project-category'
+		)
+	)
+);*/
 
 $form->endForm();
 
